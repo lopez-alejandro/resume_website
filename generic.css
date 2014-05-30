@@ -1,0 +1,48 @@
+.navigation_bar{
+    background-color: white;
+    visibility: visible;
+    display: inline-block;
+    /* lightgray border color */
+    border-color: #D3D3D3; 
+    border-width: thin;
+    border-style: solid;
+        
+    width: 50%;
+    height: 5%;
+    position: fixed;
+
+    margin-left: 25%;
+    margin-right: 25%;
+    
+}
+
+.navigation_bar td{
+    width: 10%;
+    height: 100%;
+    
+    border-color: #D3D3D3; 
+    border-right-width: thin;
+    border-left-width: thin;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+    border-style: solid;
+
+    
+
+}
+
+*{
+    /* bone color background */
+    background-color: white;
+}
+
+
+
+.nav_button > p{
+    text-align: center;
+}
+
+
+
+
+
