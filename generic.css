@@ -1,26 +1,37 @@
 .navigation_bar{
-    background-color: white;
+    background-color: #36454F;
     visibility: visible;
-    display: inline-block;
-    /* lightgray border color */
+    /* lightgray border color 
     border-color: #D3D3D3; 
+    */
+    border-color:black;
     border-width: thin;
     border-style: solid;
         
     width: 50%;
     height: 5%;
-    position: fixed;
+    position: absolute;
 
-    margin-left: 25%;
-    margin-right: 25%;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    margin-left: auto;
+    margin-right: auto;
+    
     
 }
 
 .navigation_bar td{
-    width: 10%;
+    width: 20%;
     height: 100%;
-    
+
+
+    background-color: #36454F;
+    border-color: black;
+    /*
     border-color: #D3D3D3; 
+    */
     border-right-width: thin;
     border-left-width: thin;
     border-top-width: 0px;
@@ -28,8 +39,60 @@
     border-style: solid;
 
     
-
+    text-align: center;
+    
+/*
+    color: #696969; 
+    */
+    color: white;
+    /*
+    color: #36454F;*/
 }
+
+.navigation_bar td:hover{
+    color: black;
+    background-color:#B2FFFF; 
+}
+
+.navigation_bar:hover{
+    background-color: none;
+}
+
+
+#home_button{
+    border-left-width: 0px;
+}
+
+#education_button{
+    border-left-width: 0px;
+}
+#skills_button{
+    border-left-width: 0px;
+}
+#interests_button{
+    border-left-width: 0px;
+}
+#hire_button{
+    border-right-width: 0px;
+    border-left-width: 0px;
+}
+
+.profile_pic{
+    
+    display: inline-block;
+    content:url("profilePicture.png");
+
+    width: 25%;
+    height: auto;
+
+    margin-left: 25%;
+    margin-top: 5%;
+
+    left: 0;
+    top: 0;
+}
+
+
 
 *{
     /* bone color background */
@@ -38,9 +101,8 @@
 
 
 
-.nav_button > p{
-    text-align: center;
-}
+
+
 
 
 
