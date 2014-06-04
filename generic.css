@@ -1,151 +1,187 @@
-.navigation_bar{
-    background-color: #36454F;
-    visibility: visible;
-    /* lightgray border color 
-    border-color: #D3D3D3; 
-    */
-    border-color:black;
-    border-width: thin;
-    border-style: solid;
-        
-    width: 60%;
-    height: 5%;
-    position: absolute;
+/* Roboto font face */
+@font-face{
+    font-family: Roboto-Regular;
+    src: url("Roboto_v1.2/Roboto/Roboto-Regular.ttf");
+}
 
-    top: 0;
-    right: 0;
-    left: 0;
+/* Roboto Bold font face */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url("Roboto_v1.2/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    /*
+    background-color:#F0EAD6;
+    */
+    /*
+    background-color: #FFFDD0;*/
+    background-color: #F5F5DC;
+}
+
+.profile_section p{
+    font-family: Roboto-Regular;
+    font-size: 1.2em; 
+    color: #222222;
+    text-align: justify;
+}
+
+#profile_pic{
+    width: 350px;
+    height: auto;
+    
+    position: relative;
+
+
+
+    float: left;
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.profile_section{
+    width: 730px;
+    height:100%;
+
+    position: relative;
+
+    top: 20px;
+    left: 50%;
+
+    margin-left: -230px;
+
+}
+
+.left_bar_option:hover > p{
+    /*background-color: #7df9ff;*/
+    background-color: #F5DEB3;
+    color: #222222;
+}
+
+
+.left_bar_option:hover{
+    /*background-color:#7DF9FF;*/
+     background-color: #F5DEB3;
+
+}
+
+.left_bar_option{
+    position: relative;
+
+    width: 125px;
+    height: 125px;
+
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #008080;
+    border-width: thick;
+
+    text-align: center;
+
+    display: block;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+.left_bar_option p{
+    text-align: center;
+
+    font-family: Roboto-Regular;
+    font-size: 1.2em;
+
+    width: 100px;
+    height: auto;
+
+    padding: 0px;
 
     margin-left: auto;
     margin-right: auto;
-    
-    
+    margin-top: 50px;
 }
 
-.navigation_bar td{
-    width: 20%;
-    height: 100%;
-
-
-    background-color: #36454F;
-    border-color: black;
-    /*
-    border-color: #D3D3D3; 
-    */
-    border-right-width: thin;
-    border-left-width: thin;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-style: solid;
-
-    
-    text-align: center;
-    font-family: Roboto-Bold;
-    
-/*
-    color: #696969; 
-    */
-    color: white;
-    /*
-    color: #36454F;*/
-}
-
-.navigation_bar td:hover{
-    color: black;
-    background-color:#B2FFFF; 
-}
-
-.navigation_bar:hover{
-    background-color: none;
-}
-
-
-#home_button{
-    border-left-width: 0px;
-}
-
-#education_button{
-    border-left-width: 0px;
-}
-#skills_button{
-    border-left-width: 0px;
-}
-#interests_button{
-    border-left-width: 0px;
-}
-#hire_button{
-    border-right-width: 0px;
-    border-left-width: 0px;
-}
-
-.profile_pic{
-    
-    display: inline-block;
-    content:url("profilePicture.png");
-
-    width: 25%;
-    height: auto;
-
-    margin-left: 20%;
-    margin-top: 5%;
-
-    left: 0;
-    top: 0;
-}
-
-
-
-*{
-    /* bone color background */
-    background-color: white;
-}
-
-@font-face
-{
-font-family: Roboto-Regular;
-src: url("Roboto_v1.2/Roboto/Roboto-Regular.ttf");
-}
-
-@font-face
-{
-font-family: Roboto-Bold;
-src: url("Roboto_v1.2/Roboto/Roboto-Bold.ttf");
-font-weight:bold;
-}
-
-#home_greeting{
-    font-family: Roboto-Bold;
-    font-size: 3em;
-
-    max-height: 100%;
-}
-
-#home_paragraph{
-    font-family: Roboto-Regular;
-    font-size: 1em;
-
-    max-height: 100%;
-}
-
-.home_information{
-    display: inline-block;
+.left_bar{
 
     position: absolute;
 
-    margin-left: 50%;
-    margin-top: 5%; 
+    width: 243px;
+    height: 900px;
 
-    top: 0;
-    left: 0;
+
+    visibility: visible;
+
+    top: 140px;
+    left: 50%;
     
-    width: 30%;
-    height: .profile_pic.height();
+    margin-left: -486px;
+    margin-right: auto;
 
-    text-align: center;
 
-    border-color: black;
     border-style: solid;
-    border-width: thin;
+    border-top-width: 0px;
+    border-right-width: thick;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    /*border-color: #232b2b;*/
+    border-color: #222222;
+    border-radius: 5%;
+
+    padding: 0px;
+
+}
+
+.header_bar{
+
+    position: relative;
+
+    width: 974px;
+    height: 100px;
+
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: thick;
+    /*border-color: #232B2B;*/
+    border-color: #222222;
+    border-radius: 5%;
+
+    padding: 10px;
+}
+
+#alejandro_header{
+
+    font-family: Roboto-Bold;
+    font-size: 3.5em;
+
+    position:absolute;
+
+    color:#008080;
+
+}
+
+#alejandro_info{
+    
+    font-family: Roboto-Regular;
+
+    position: absolute;
+
+    color:#008080; 
+
+    right: 0px;
+
+    
 
 }
 
