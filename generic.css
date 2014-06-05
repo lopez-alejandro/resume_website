@@ -17,7 +17,12 @@
     */
     /*
     background-color: #FFFDD0;*/
-    background-color: #F5F5DC;
+    /*background-color: #F5F5DC;*/
+    background-color: #F4F0EC;
+}
+
+.left_bar >a:active p{
+
 }
 
 .profile_section p{
@@ -25,6 +30,8 @@
     font-size: 1.2em; 
     color: #222222;
     text-align: justify;
+
+    margin-top: -5px;
 }
 
 #profile_pic{
@@ -33,104 +40,127 @@
     
     position: relative;
 
-
+    border-style: solid;
+    border-width: thick;
+    border-color: #00cccc;
 
     float: left;
-    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
     margin-top: 0px;
     margin-bottom: 0px;
 }
 
 .profile_section{
+    overflow: hidden;
     width: 730px;
-    height:100%;
+    height: auto;
 
     position: relative;
 
-    top: 20px;
+    top: 0px;
     left: 50%;
 
     margin-left: -230px;
+    padding: 25px;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: thick;
+    border-left-width: thick;
+    /*border-color: #232b2b;*/
+    /*border-color:#008080;
+     */
+    border-color:#00cccc;
 
 }
 
 .left_bar_option:hover > p{
-    /*background-color: #7df9ff;*/
-    background-color: #F5DEB3;
-    color: #222222;
+    background-color: #7df9ff;
+    opacity: 1;
+    color: black;
 }
 
 
 .left_bar_option:hover{
-    /*background-color:#7DF9FF;*/
-     background-color: #F5DEB3;
+    background-color:#7DF9FF;
+    opacity: 1;
 
 }
 
 .left_bar_option{
     position: relative;
 
-    width: 125px;
-    height: 125px;
+    width: 150px;
+    height: 30px;
 
-    border-radius: 100%;
-    border-style: solid;
-    border-color: #008080;
-    border-width: thick;
+    border-radius: 0%;
 
-    text-align: center;
+    background-color: #00cccc;
+
+    
 
     display: block;
-
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
+    
+    padding: 10px;
 
 }
 
 
 .left_bar_option p{
     text-align: center;
+    position: absolute;
 
-    font-family: Roboto-Regular;
-    font-size: 1.2em;
+    font-family: Roboto-Bold;
+    font-size: 25px;
 
-    width: 100px;
+    width: 150px;
     height: auto;
+    background-color: #00cccc;
+    color: #222222;
 
+    opacity: 1;
     padding: 0px;
-
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 50px;
+    
+    top: 25%;
+    
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .left_bar{
 
-    position: absolute;
+    position: fixed;
 
     width: 243px;
-    height: 900px;
+    height: auto;
 
 
     visibility: visible;
+
+    overflow: hidden;
 
     top: 140px;
     left: 50%;
     
     margin-left: -486px;
-    margin-right: auto;
 
 
     border-style: solid;
     border-top-width: 0px;
-    border-right-width: thick;
+    border-right-width: 0px;
     border-bottom-width: 0px;
     border-left-width: 0px;
     /*border-color: #232b2b;*/
-    border-color: #222222;
-    border-radius: 5%;
+    /*border-color:#008080;
+     */
+    border-color:#00cccc; 
+    border-radius: 0%;
 
     padding: 0px;
 
@@ -140,8 +170,10 @@
 
     position: relative;
 
-    width: 974px;
+    width: 99%;
+    /*width: 974px;*/
     height: 100px;
+    overflow: hidden;
 
 
     margin-left: auto;
@@ -154,21 +186,44 @@
     border-left-width: 0px;
     border-bottom-width: thick;
     /*border-color: #232B2B;*/
-    border-color: #222222;
-    border-radius: 5%;
+    /*border-color: #008080;
+     */
+    border-color: #00cccc;
+    border-radius:0%;
 
     padding: 10px;
 }
 
 #alejandro_header{
 
+
     font-family: Roboto-Bold;
     font-size: 3.5em;
 
     position:absolute;
 
-    color:#008080;
+    color:#222222;
 
+
+}
+
+
+
+.name{
+    height: 100px;
+    width: 600px;
+
+    position: absolute;
+    right: 50%;
+    margin-right: -113px;
+
+}
+
+#progammer_header{
+    font-family: Roboto-Bold;
+    position: absolute;
+
+    color: #00cccc;
 }
 
 #alejandro_info{
@@ -177,9 +232,12 @@
 
     position: absolute;
 
-    color:#008080; 
+    color: #222222; 
 
-    right: 0px;
+    right: 50%;
+    margin-right: -487px;
+    margin-top: auto;
+    margin-bottom: auto;
 
     
 

@@ -3,44 +3,91 @@
 <html>
     <head>
         <title>Alejandro Lopez: Home</title>
-        <link type = "text/css" media = "all" rel = "stylesheet" href = "generic.css"/>
+        <link type = "text/css" media = "all" rel = "stylesheet" href = "generic.css"/>        
+
     </head>
 
     <body>
+        <script src="jquery-1.11.1.js"></script>
+        <script>
+           $(document).ready(function () {
+  var top = $('.left_bar').offset().top;
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+    $('.left_bar').css({
+        position: 'fixed',
+        top: '140px'
+    });
+    } else {
+      // otherwise remove it
+        position: 'absolute'
+    }
+  });
+
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 900, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+
+});
+        </script>
+
         <div class = "header_bar">
-            <h1 id = "alejandro_header">Alejandro Lopez</h3>
+            <div class = "name">
+                <h1 id = "alejandro_header">ALEJANDRO LOPEZ</h3>
+                <h2 id = "progammer_header">COMPUTER PROGRAMMER & COMPUTER ENGINEER</h2>
+            </div>
             <h3 id = "alejandro_info">Alejandro Lopez<br>lope058@usc.edu<br>(818) 426-2235<br></h>
 
         </div>
 
         <div class = "left_bar">
-            <div class = "left_bar_option" id = "about">
-                <p>About Me</p> 
-            </div>
-            <div class = "left_bar_option" id = "education">
-                <p>Education</p> 
-            </div>
+            <a href = "#profile_pic"><div class = "left_bar_option" id = "about">
+                <p>ABOUT ME</p>
+            </div></a>
+            <a href = "#school_pic"><div class = "left_bar_option" id = "education">
+                <p>EDUCATION</p>
+            </div></a>
             <div class = "left_bar_option" id = "skills">
-                <p>Skills</p> 
+                <p>SKILLS</p> 
             </div>
             <div class = "left_bar_option" id = "projects">
-                <p>Projects</p> 
+                <p>PROJECTS</p> 
             </div>
             <div class = "left_bar_option" id = "resume">
-                <p>Resume</p>
+                <p>RESUME</p>
             </div>
             <div class = "left_bar_option" id = "contact me">
-                <p>Contact Me</p> 
+                <p>CONTACT</p> 
             </div>
         </div>
 
         <div class = "profile_section">
             <img id = "profile_pic" src = "profilePicture.png"/>
-            <p><strong>Hello,</strong> thanks for visiting my site. I'm a second year student at the University of Southern California studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company.   
+            <p>Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%' Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em>   
             </p>
         </div>
 
-        
+        <div class = "profile_section" class = "education_section">
+        <img id = "school_pic" src = "http://www.sparkthemagazine.com/wp-content/uploads/2011/05/USC-viterbi-opt.jpg"/>
+        <p>Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%' Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em> studying Computer Science and Computer Engineering (CSCE). I am currently on the hunt for a summer internship in either Los Angeles or San Francisco. You might have seen me at E3 2014. I am available for phone and in-person interviews but would rather meet up for coffee to discuss my possible role in your company. top: '140px', left: '50%'top: '140px', left: '50%'  Hello thanks for visiting my site. I'm a second year student at the <em>University of Southern California</em>
+        </p> 
+        </div> 
         <!--
         <table class = "navigation_bar">
             <tbody>
