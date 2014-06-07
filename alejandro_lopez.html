@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Alejandro Lopez Resume</title>
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "standard.css"> 
+    </head>
+
+    <body>
+    <script src="jquery-1.11.1.js"></script>
+        <script>
+           $(document).ready(function () {
+  var top = $('.header_bar').offset().top;
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+    $('.navigation_bar').css({
+        position: 'fixed',
+        top: '240px'
+    });
+    } else {
+    $('.navigation_bar').css({
+        position: 'absolute',
+        top: '40px'
+    });
+      // otherwise remove it
+        
+    }
+  });
+
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 700, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+
+});
+        </script>
+        <div class = "header_bar">
+
+        </div>
+        
+        <div class = "middle_section">
+            <div class = "navigation_bar">
+                <a href = "#profile_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>ABOUT ME</td></tr>
+                </table></a>
+                <a href = "#education_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>EDUCATION</td></tr>
+                </table></a>
+                <a href = "#skills_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>SKILLS</td></tr>
+                </table></a>
+                <a href = "#experience_section"><table class = "navigation_table">
+                    <tr><td colSpan='3'>EXPERIENCE</td></tr>
+                </table></a>
+                <a href = "#resume_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>RESUME</td></tr>
+                </table></a>
+                <a href = "#contact_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>CONTACT</td></tr>
+                </table></a>
+                
+            </div>
+
+            <div class = "content_section" id = "profile_section">
+            </div>
+
+            <div class = "content_section" id = "education_section">
+            </div>
+
+            <div class = "content_section" id = "skills_section">
+            </div>
+            <div class = "content_section" id = "experience_section">
+            </div>
+            <div class = "content_section" id = "resume_section">
+            </div>
+            <div class = "content_section" id = "contact_section">
+            </div>
+        </div>
+
+
+    </body>
+
+
+</html>
