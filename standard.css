@@ -50,7 +50,7 @@ div{
 
 .middle_section{
     position: relative;
-    background-color: black;
+    background-color: #F4F0EC;
 
     width: 974px;
     height: 900px;
@@ -97,7 +97,7 @@ div{
  */
 .navigation_bar{
     width: 190px;
-    background-color: red;
+    background-color: #F4F0EC;
     position: absolute;
     top: 40px;
     margin: 0px;
@@ -113,7 +113,7 @@ div{
     position: relative;
     width: 780px;
     height: 600px;
-    background-color: yellow;
+    background-color: #F4F0EC;
 
     left: 190px;
 
@@ -126,5 +126,45 @@ div{
     margin-bottom: 0px;
     margin-top: -5px;
 
+    overflow: hidden;
+
+}
+
+#profile_section{
+    height: 500px;
+}
+
+.profile_pic{
+    position: relative;
+
+
+    left: 40px;
+    top: 35px;
+
+    max-width: 720px;
+}
+
+.profile_pic img{
+    height: 350px;
+    width: auto;
+
+    float: left;
+    border-style: solid;
+    border-color: #00cccc;
+    border-width: thick;
+
+    margin-right: 10px;
+}
+
+.profile_pic p{
+    text-align: justify;
+}
+
+.profile_pic span,a{
+    font-family: Roboto-Bold;
+}
+
+a{
+    text-decoration: none;
 }
 
