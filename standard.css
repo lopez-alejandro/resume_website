@@ -11,6 +11,15 @@
     font-weight: bold;
 }
 
+@font-face{
+    font-family: Roboto-Thin;
+    src: url("Roboto_v1.2/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face{
+    font-family: Roboto-Light;
+    src: url("Roboto_v1.2/Roboto/Roboto-Light.ttf");
+}
 html{
     background-color: #F4F0EC;
     font-family: Roboto-Regular;
@@ -18,6 +27,10 @@ html{
 
 div{
     border-color: #00cccc;
+}
+
+a:focus{
+    outline: none;
 }
 
 .header_bar{
@@ -35,7 +48,7 @@ div{
     background-color: white;
 
     border-style: solid;
-    border-bottom-width: thick;
+    border-bottom-width: medium;
     border-top-width: 0px;
     border-right-width: 0px;
     border-left-width: 0px;
@@ -65,10 +78,16 @@ div{
     
 }
 
+.navigation_table:hover td{
+    color: white;
+}
+
 .navigation_bar td{
     padding: 10px;
     color: #222222;
+    /*
     text-shadow: -1px 1px 1px #222222;
+    */
 }
 
 .navigation_table{
@@ -85,7 +104,7 @@ div{
     white-space: nowrap;
 
 
-    font-family: Roboto-Bold;
+    font-family: Roboto-Light;
     font-size: 20px;
     
     
@@ -118,9 +137,9 @@ div{
     left: 190px;
 
     border-style: solid;
-    border-left-width: thick;
+    border-left-width: medium;
     border-right-width: 0px;
-    border-bottom-width: thick;
+    border-bottom-width: medium;
     border-top-width: 0px;
 
     margin-bottom: 0px;
@@ -134,37 +153,60 @@ div{
     height: 500px;
 }
 
-.profile_pic{
+.content_container{
     position: relative;
 
 
     left: 40px;
-    top: 35px;
+    top: 40px;
 
     max-width: 720px;
 }
 
-.profile_pic img{
-    height: 350px;
-    width: auto;
+#profile_pic img{
+    width: 280px;
+    height: auto;
 
     float: left;
     border-style: solid;
     border-color: #00cccc;
-    border-width: thick;
+    border-width: medium;
 
     margin-right: 10px;
 }
 
-.profile_pic p{
+#profile_pic p{
     text-align: justify;
+    font-family: Roboto-Light;
+    color: #222222;
 }
 
-.profile_pic span,a{
-    font-family: Roboto-Bold;
+#profile_pic span,a{
+    font-family: Roboto-Regular;
 }
 
 a{
     text-decoration: none;
 }
+
+.content_header{
+    color: #00cccc;
+    font-family: Roboto-Thin;
+    overflow: hidden; 
+    margin-top: 0px;
+
+}
+
+#viterbi_logo{
+
+    width: 280px;
+    height: auto;
+
+    border-style: solid;
+    border-width: medium;
+    border-color: #00cccc;
+}
+
+
+
 
