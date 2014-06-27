@@ -27,8 +27,10 @@ html{
 
 .header_bar{
     position: fixed;
-    opacity: 0.75;
+    opacity: 0.85;
 
+
+    background-color: white;
     width: 100%;
     height: 65px;
 
@@ -51,6 +53,8 @@ html{
     top: 0px;
     margin: 0px;
     padding: 0px;
+
+    z-index: 5;
 }
 
 .header_container{
@@ -70,12 +74,14 @@ html{
 }
 
 #header_table{
-    position: relative;
+    position: absolute;
     margin: 0px;
     padding: 0px;
-    bottom: 2px;
+    top: -2px;
     height: 70px;
 
+
+    left: 0px;
 }
 
 #header_table td{
@@ -86,6 +92,20 @@ html{
     border-bottom-width: 0px;
     border-top-width: 0px;
 
+    
+
+}
+
+#header_table:hover, #header_table_contact:hover{
+    cursor: pointer;
+}
+
+#header_education:hover, #header_skills:hover, #header_experience:hover, #header_resume:hover, #header_contact:hover{
+    color: #FF6961;
+}
+
+#header_logo:hover img{
+    opacity: 1.0;
 }
 
 #header_logo{
@@ -104,8 +124,135 @@ html{
 }
 
 #header_logo img{
-    width: 45px;
-    height: 45px;
+    width: 50px;
+    height: 50px;
     margin:0px;
     padding: 0px;
+    opacity: 0.80;
+}
+
+#header_table_contact{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: -2px;
+    height: 70px;
+
+
+    
+    right: 0px;
+}
+
+#header_table_contact td{
+     border-style: solid;
+    border-color: #CFCFC4;
+    border-right-width: thin;
+    border-left-width: thin;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+    
+
+}
+
+#e3Selfie_background{
+    position: absolute;
+    width: 100%;
+    height: 550px;
+
+    background-color: #CFCFC4;
+    top: 70px;
+    left: 0px;
+
+    margin: 0px;
+    padding:0px;
+
+}
+
+#e3Selfie_container{
+
+    position: relative;
+    width: 974px;
+
+    height: 450px;
+    overflow: hidden;
+
+    text-align: center;
+
+    top: 50px;
+    
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#e3Selfie{
+    width: 974px;
+    height: auto;
+
+    margin-top: -150px;
+}
+
+#profile_container{
+    width: 974px;
+    position: relative;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    top: 665px;
+}
+
+#name_header{
+    font-size: 40px;
+    text-align: center;
+    font-family: Roboto-Thin;
+    margin-top: 0px;
+    margin-bottom: 50px;
+    color: #222222;
+    letter-spacing: 5px;
+}
+
+#profile_paragraph span{
+    font-family: Roboto-Regular;
+    letter-spacing: 1px;
+}
+
+#profile_paragraph{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 50px;
+
+    color: #222222;
+
+    letter-spacing: 1px;
+    line-height: 150%;
+}
+
+#footer_container{
+    width: 100%;
+    height: 200px;
+
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    position: absolute;
+    background-color: #EDEDED;
+    left: 0px;
+    top: 1050px;
+}
+
+#copyright{
+    font-family: Roboto-Regular;
+    text-align: right;
+}
+
+#copyright_words{
+   text-align: right;
+   width: 200px;
+   right: 0px;
 }
