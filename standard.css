@@ -23,6 +23,7 @@
 html{
     background-color: #F4F0EC;
     font-family: Roboto-Regular;
+    background-image: url("grey_wash_wall.png");
 }
 
 div{
@@ -45,7 +46,7 @@ a:focus{
     top: 0px;
     padding: 0px;
 
-    background-color: white;
+    background-color: #F5f5f5;
 
     border-style: solid;
     border-bottom-width: medium;
@@ -61,10 +62,25 @@ a:focus{
     z-index: 1;
 }
 
+#link_info{
+    font-family: Roboto-Light;
+    font-size: 18px;
+
+    position: absolute;
+
+    right: 50%;
+    margin-right: -487px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
 .middle_section{
     position: relative;
+    /*
     background-color: #F4F0EC;
-
+*/
     width: 974px;
     height: 900px;
 
@@ -116,7 +132,9 @@ a:focus{
  */
 .navigation_bar{
     width: 190px;
+    /*
     background-color: #F4F0EC;
+    */
     position: absolute;
     top: 40px;
     margin: 0px;
@@ -131,9 +149,9 @@ a:focus{
     display: inline-block;
     position: relative;
     width: 780px;
-    height: 600px;
+    /*
     background-color: #F4F0EC;
-
+*/
     left: 190px;
 
     border-style: solid;
@@ -150,7 +168,7 @@ a:focus{
 }
 
 #profile_section{
-    height: 500px;
+    height:500px;
 }
 
 .content_container{
@@ -178,6 +196,7 @@ a:focus{
 #profile_pic p{
     text-align: justify;
     font-family: Roboto-Light;
+    font-size: 18px;
     color: #222222;
 }
 
@@ -197,7 +216,7 @@ a{
 
 }
 
-#viterbi_logo{
+#viterbi_logo, #ghchs_logo{
 
     width: 280px;
     height: auto;
@@ -205,7 +224,36 @@ a{
     border-style: solid;
     border-width: medium;
     border-color: #00cccc;
+
+    float: left;
 }
+
+#education_section{
+    height: 960px;
+}
+
+#education_table{
+    position: relative;
+    border-spacing: 20px 20px;
+    top: -20px;
+    
+}
+
+#education_table span{
+    font-family: Roboto-Regular;
+
+}
+
+#education_table td{
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+
+#education_table ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
 
 
 
