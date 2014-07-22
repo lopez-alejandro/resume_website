@@ -12,6 +12,7 @@
     height: 650px;
 
     background-color: #e0e0e0;
+    background-color: white;
 
     padding: 0px;
     margin: 0px;
@@ -100,7 +101,9 @@
 
     margin-top: 50px;
     margin-bottom: 0px;
-    text-align: center
+    text-align: center;
+
+    color: #222222;
 }
 
 .info_module{

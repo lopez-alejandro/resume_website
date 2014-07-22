@@ -154,6 +154,17 @@ html{
 
 }
 
+#down_arrow{
+    width: 20px;
+    height: auto;
+
+    position: relative;
+
+    top: 3px;
+    margin-left: 5px;
+    opacity: 0.75;
+}
+
 .contact_list{
     position: absolute;
     margin: 0px;
@@ -196,6 +207,7 @@ html{
 
     right: 0px;
 
+    display: none;
 
 }
 
@@ -219,4 +231,30 @@ html{
 
     color: #222222;
 
+}
+
+.contact_list_item:hover .contact_list_dropdown{
+    display: block;
+}
+
+.contact_list_item:hover{
+    background-color: #d7d7d7;
+    color: #FF6961;
+}
+
+.contact_list_dropdown_item:hover{
+    background-color: #FF6961;
+    color: white;
+}
+
+.dropdown_img{
+    height: 20px;
+    width: auto;
+    position: relative;
+
+
+    vertical-align: middle;
+
+    margin-right: 20px;
+    margin-left: 20px;
 }
