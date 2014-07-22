@@ -21,6 +21,9 @@
     src: url("Roboto_v1.2/Roboto/Roboto-Light.ttf");
 }
 
+::selection {color:white;background:#FF6961;}
+::-moz-selection {color:white;background:#FF6961;}
+
 html{
     font-family: Roboto-Light;
 }
