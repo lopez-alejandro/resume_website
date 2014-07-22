@@ -3,11 +3,14 @@
 <html>
     <head>
         <title>Alejandro Lopez: Profile</title>
+<link type = "text/css" rel = "stylesheet" media = "all" href = "third_navigation.css"> 
         <link type = "text/css" rel = "stylesheet" media = "all" href = "third.css">  
         <link rel="shortcut icon" href="triangle.png" />
     </head>
     <body>
         <script src="jquery-1.11.1.js"></script> 
+
+
 
         <div class = "header_bar">
             <div class = "header_container">
@@ -15,16 +18,26 @@
                     <tr>
                         <td onClick = "document.location.href='revision3.html';" class = "header_module" id = "header_logo"><a href = "revision3.html"><img src = "triangle.png"/></a></td>
                         <td onClick = "document.location.href='revision3_education.html';" class = "header_module" id = "header_education">Education</td>
-                        <td class = "header_module" id = "header_skills">Skills</td>
-                        <td class = "header_module" id = "header_experience">Experience</td>
+                        <td onClick = "document.location.href='revision3_skills.html';" class = "header_module" id = "header_skills">Skills</td>
+                        <td onClick = "document.location.href='revision3_experience.html';" class = "header_module" id = "header_experience">Experience</td>
                         <td class = "header_module" id = "header_resume">Resume</td>
                     </tr>
                 </table>
+                
+                <ul class = "contact_list">
+                    <li class = "contact_list_item">Contact Me
+                    <ul class = "contact_list_dropdown">
+                        <li class = "contact_list_dropdown_item" id = "hope">Hello</li>
+                        <li class = "contact_list_dropdown_item">Really</li>
+                    </ul></li>
+                </ul> 
+                <!--
                 <table id = "header_table_contact">
                     <tr>
                         <td class = "header_module" id = "header_contact">Contact Me</td>
                     </tr>
                 </table>
+                --> 
             </div>
         </div>
 
