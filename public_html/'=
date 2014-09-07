@@ -1,0 +1,99 @@
+/* Roboto font face */
+@font-face{
+    font-family: Roboto-Regular;
+    src: url("Roboto_v1.2/Roboto/Roboto-Regular.ttf");
+}
+
+/* Roboto Bold font face */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url("Roboto_v1.2/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+*{
+    background-color:#FFFAFA; 
+}
+
+.left_bar{
+    display: inline-block;
+
+    position: absolute;
+
+    width: 20%;
+    height: 80%;
+
+    top: 10%;
+    left: 0;
+
+    margin-top: 10%;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: thin;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-color: #232b2b;
+
+}
+
+.header_bar{
+    display: inline-block;
+
+    width: 974px;
+    height: 20%;
+    
+    float: top;
+    
+    position: absolute;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    border-style: solid;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+    border-bottom-width: thin;
+    border-color: #232B2B;
+}
+
+#alejandro_header{
+    display: inline-block;
+
+    font-family: Roboto-Bold;
+    height: 10%;
+    font-size: 3.5em;
+    float: left;
+
+    position:absolute;
+
+    color:#008080;  
+
+    margin-left: 5%;
+
+}
+
+#alejandro_topRight_header{
+    display: inline-block;
+    
+    font-family: Roboto-Regular;
+
+    position: absolute;
+    float: right;
+
+    color:#008080; 
+
+    margin-right: 1%;
+
+}
+
+
+
+
+
+
+
+
+
+

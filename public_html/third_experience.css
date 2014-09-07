@@ -1,0 +1,136 @@
+#header_experience{
+    color: #FF6961;
+}
+
+html{
+    background-color: #d3d3d3;
+}
+
+a{
+    text-decoration: none;
+}
+#experience_container{
+    width: 974px;
+    position: relative;  
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    top: 63px;
+}
+
+.experience_module{
+    position: relative;
+
+    width: 974px;
+    height: 400px;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    background-color: #e0e0e0;
+
+    padding: 0px; 
+}
+
+.module_bar{
+    position: relative;
+
+    width: 980px;
+    height: 50px;
+
+    background-color: #939393;
+    left: -3px;
+}
+
+.module_bar_date{
+    position: absolute;
+    display: inline-block; 
+    font-size: 18px;
+
+    left: 0px;
+    margin-left: 20px;
+    color: #222222;
+}
+
+.module_bar_position{
+    position: absolute;
+    display: inline-block;
+    font-size: 18px;
+
+    right: 0px;
+    margin-right: 20px;
+    color: #222222;
+}
+
+.module_left_col{
+    position: relative;
+
+    display: inline-block;
+
+    width: 325px;
+    height: 350px;
+
+    background-color: #e9e9e9;
+    float: left;
+}
+
+.module_right_col{
+    position: relative;
+
+    display: inline-block;
+
+    width: 649px;
+    height: 350px;
+
+    background-color: #f1f1f1;
+
+    text-align: center;
+}
+
+.module_right_col img{
+    width: 649px;
+    max-width: 649px;
+    height: 350px;
+    
+    position: relative;
+}
+
+#glob_ball_right_col img{
+    height: 350px;
+    width: auto;
+    max-width: 649px;
+
+    position: relative;
+}
+
+.company_name{
+    text-align: left;
+
+    letter-spacing: 1px;
+    font-size: 30px;
+
+    color: #FC6961;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.job_description{
+    text-align: left;
+
+    letter-spacing:1px;
+    
+    color: #222222;
+
+    margin-left: 15px;
+    margin-right: 15px;
+
+    font-size: 18px;
+}

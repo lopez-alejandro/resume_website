@@ -1,0 +1,179 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <title>Alejandro Lopez: Skills</title>
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "third_skills.css">  
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "third_navigation.css">
+
+        <link rel="shortcut icon" href="triangle.png" />
+    </head>
+    <body>
+        <script src="jquery-1.11.1.js"></script>
+         
+        <div class = "header_bar">
+            <div class = "header_container">
+                <table id = "header_table">
+                    <tr>
+                        <td onClick = "document.location.href='index.html';" class = "header_module" id = "header_logo"><a href = "index.html"><img src = "triangle.png"/></a></td>
+                        <td onClick = "document.location.href='education.html';" class = "header_module" id = "header_education">Education</td>
+                        <td onClick = "document.location.href='skills.html';" class = "header_module" id = "header_skills">Skills</td>
+                        <td onClick = "document.location.href='experience.html';" class = "header_module" id = "header_experience">Experience</td>
+                        <td onClick = "document.location.href='resume.html';" class = "header_module" id = "header_resume">Resume</td>
+                    </tr>
+                </table>
+                <ul class = "contact_list">
+                    <li class = "contact_list_item" id = "contact_me">Contact Me <img id = "down_arrow" src = "down_arrow.png"/>
+                    <ul class = "contact_list_dropdown">
+                        <li class = "contact_list_dropdown_item" id = "hope">Email <img class = "dropdown_img" src = "http://icons.iconarchive.com/icons/cornmanthe3rd/plex/512/Communication-gmail-icon.png"/></li>
+                        <li class = "contact_list_dropdown_item">LinkedIn <img class = "dropdown_img" src = "http://www.seniorhelpers.com/images/linkedin-icon.png"/></li>
+                        <li class = "contact_list_dropdown_item">Twitter<img class = "dropdown_img" src = "http://www.vitusvet.com/images/smicons/transparent-twitter-logo-icon.png"/></li>
+                    </ul></li>
+                </ul> 
+            </div>
+
+        </div>
+        <div id = "working_background">
+                <div id = "working_photo_container">
+                    <img id = "working_photo"src = "working1.JPG"/>
+                    
+                </div>
+                
+                <div id = "working_info_container">
+                    <p id = "working_info">I constantly work to improve as both a person and a programmer. I owe much of my success not to my intelligence, but to my hard work and ambition.</p>
+                </div>
+                
+        </div>
+        
+        <div id = "skills_background">
+            <p id = "skills_header">My utility belt</p>
+            <div id = "skills_container">
+               
+                <!--The info module for JAVA -->
+                <div class = "info_module" id = "java_module">
+                    <img src = "https://www.funcaptcha.co/wp-content/uploads/2013/04/java_logoTransparent.png"/>
+                    <p class = "info_module_header">Java</p>
+                    <p class = "info_module_info">Java is my first (and favorite) progamming lanugage. It will always hold a special place in my text editor.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "java_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "java_percent">85%</p>
+                    </div>
+                </div>
+                
+                <!-- The info module for HTML -->
+                <div class = "info_module" id = "html_module">
+                    <img src = "http://www.w3.org/html/logo/downloads/HTML5_Logo_512.png"/>
+                    <p class = "info_module_header">HTML</p>
+                        <p class = "info_module_info">My relationship with HTML is just starting, but I already feel extremely adept and confident in my ability to use it. Of course, you can judge for yourself based on your opinion of my website.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "html_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "html_percent">75%</p>
+                    </div>
+                </div>
+
+                <!-- The info module for CSS -->
+                <div class = "info_module" id = "css_module">
+                    <img src = "http://upvedatech.com/img/css3.png"/>
+                    <p class = "info_module_header">CSS</p>
+                        <p class = "info_module_info">A great creative outlet. You can't have nice things without CSS.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "css_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "css_percent">70%</p>
+                    </div>
+                </div>
+
+                <!-- The info module for C-->
+                <div class = "info_module" id = "c_module">
+                    <img src = "c_logo.png"/>
+                    <p class = "info_module_header">C</p>
+                        <p class = "info_module_info">My go to language for programming microcontrollers. Nothing beats C's low profile and memory management tools.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "c_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "c_percent">75%</p>
+                    </div>
+                </div>
+
+                <!-- The info module for C++ -->
+                <div class = "info_module" id = "cpp_module">
+                    <img src = "c++_logo.png"/>
+                    <p class = "info_module_header">C++</p>
+                        <p class = "info_module_info">I have a love hate history with C++ but I can't deny its power and utility. C++ has quickly become my strongest language as I find myself using it more and more.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "cpp_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "cpp_percent">95%</p>
+                    </div>
+                </div>
+
+                <!-- The info module for JQuery -->
+                <div class = "info_module" id = "jquery_module">
+                    <img src = "http://www.ianhoar.com/wp-content/uploads/2011/06/jquery_logo.png"/>
+                    <p class = "info_module_header">jQuery</p>
+                        <p class = "info_module_info">A new addition, but I am working hard to bring my knowledge and experience with jQuery up to par!</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "jquery_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "jquery_percent">25%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div id = "design_background">
+            <p id = "design_header">Design tools</p>
+            <div id = "design_container">
+                <!-- The info module for Photoshop -->
+                <div class = "info_module" id = "photoshop_module">
+                    <img src = "http://upload.wikimedia.org/wikipedia/en/2/20/Photoshop_CC_icon.png"/>
+                    <p class = "info_module_header">Photoshop</p>
+                        <p class = "info_module_info">Whether it is removing red eyes from photos or creating vistas for my wallpapers, I am proficient enough with photoshop to work confidently with any kind of image.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "photoshop_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "photoshop_percent">80%</p>
+                    </div>
+
+
+                 </div>
+
+                <!-- The info module for Illustrator-->
+                <div class = "info_module" id = "illustrator_module">
+                    <img src = "http://upload.wikimedia.org/wikipedia/commons/d/d8/Adobe_Illustrator_Icon_CS6.png"/>
+                    <p class = "info_module_header">Illustrator</p>
+                        <p class = "info_module_info">Vectors are beautiful. I use Illustrator to create logos and graphics for web design and mobile applications.</p>
+                    <div class = "progress_bar_container">
+                        <div class = "progress_bar_background">
+                            <div class = "progress_bar" id = "illustrator_bar">
+                            </div>
+                        </div>
+                        <p class = "progress_bar_percent" id = "illustrator_percent">80%</p>
+                    </div>
+
+
+                 </div>
+
+
+
+
+            </div>
+        </div>
+
+    </body>
+</html>

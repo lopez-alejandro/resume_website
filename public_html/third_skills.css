@@ -1,0 +1,262 @@
+#header_skills{
+    color: #FF6961;
+}
+
+#working_background{
+    position: absolute;
+
+    top: 70px;
+    left: 0px;
+
+    width: 100%;
+    height: 650px;
+
+    background-color: #e0e0e0;
+    background-color: white;
+
+    padding: 0px;
+    margin: 0px;
+}
+
+#working_photo_container{
+    position: relative;
+
+    height: 460px;
+    width: 974px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    overflow: hidden;
+    
+    padding: 0px;
+    top: 50px;
+    margin-top: 0px;
+    margin-bottom: 90px;
+}
+
+#working_photo{
+    height: auto;
+    width: 974px;
+
+    opacity: 1.0;
+    margin-top: -190px;
+    padding: 0px;
+}
+
+
+#working_info_container{
+    position: relative;
+    height: 100px;
+    width: 974px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#working_info{
+    text-align: center;
+    font-size: 18px;
+    letter-spacing: 1px;
+    line-height: 150%; 
+    color: #222222;
+
+}
+
+#skills_background{
+    position: absolute;
+
+    width: 100%;
+    height: 1025px;
+
+    left: 0px;
+    top: 720px;
+
+    background-color: #ededed;
+}
+
+#skills_container, #design_container{
+    position: relative;
+    width: 974px;
+    height: 900px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin-top: 50px;
+
+    padding: 0px;
+    text-align: center;
+}
+
+#skills_header, #design_header{
+    font-size: 25px;
+    letter-spacing: 1px;
+
+    margin-top: 50px;
+    margin-bottom: 0px;
+    text-align: center;
+
+    color: #222222;
+}
+
+.info_module{
+    width: 290px;
+    height: 400px;
+    overflow: hidden;
+
+    background-color: white;
+
+    position: relative;
+
+    display: inline-block;
+    
+    margin: 7px;
+
+    text-align: center;
+}
+
+.info_module img{
+    width: 100px;
+    height: 75px;
+    
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.info_module_header{
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #FF6961;
+}
+
+.info_module_info{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+
+    color:#222222;
+
+    letter-spacing: 1px;
+
+    font-size: 14px;
+}
+
+.progress_bar_container{
+    position: absolute;
+    width: 290px;
+    height: 50px;
+
+    display: inline-block;
+
+    border-style: solid;
+    border-color: #ededed;
+    border-top-width: thin;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+
+    bottom: 0px;
+    left: 0px;
+}
+
+.progress_bar_background{
+
+    display: inline-block;
+    position: relative;
+
+    width: 200px;
+    height: 4px;
+
+    background-color: #ededed; 
+
+    margin-left: 20px;
+    float: left;
+
+    top: 23px;
+    
+}
+
+.progress_bar{
+    position: relative;
+    display: inline-block;
+
+    height: inherit;
+
+    background-color: #FF6961;
+
+    float: left;
+}
+
+.progress_bar_percent{
+    float: right;
+    margin-right: 20px;
+}
+
+/*Here we set the size of the perecentage bar
+to indicate how confident I am in a specific language */
+#java_bar{
+    width: 170px;
+}
+
+#html_bar{
+    width: 150px;
+}
+
+#css_bar{
+    width: 140px;
+}
+
+#c_bar{
+    width: 150px;
+}
+
+#cpp_bar{
+    width: 190px; 
+}
+
+#jquery_bar{
+    width: 50px;
+}
+
+#design_background{
+    position: absolute;
+
+    width: 100%;
+    height: 700px;
+    left: 0px;
+
+    margin: 0px;
+    padding: 0px;
+
+    background-color: #f6f6f6;
+
+    top: 1745px;
+}
+
+#design_container{
+    height: 500px;
+}
+
+#photoshop_bar, #illustrator_bar{
+    width: 160px;
+}
+
+#illustrator_module, #photoshop_module{
+    background-color: #d3d3d3;
+}
+
+#illustrator_module img, #photoshop_module img{
+    width: 90px;
+    height: 90px;
+}

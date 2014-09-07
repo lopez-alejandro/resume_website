@@ -1,0 +1,260 @@
+/* Roboto font face */
+@font-face{
+    font-family: Roboto-Regular;
+    src: url("Roboto_v1.2/Roboto/Roboto-Regular.ttf");
+}
+
+/* Roboto Bold font face */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url("Roboto_v1.2/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Roboto-Thin;
+    src: url("Roboto_v1.2/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face{
+    font-family: Roboto-Light;
+    src: url("Roboto_v1.2/Roboto/Roboto-Light.ttf");
+}
+html{
+    background-color: #F4F0EC;
+    font-family: Roboto-Regular;
+    background-image: url("grey_wash_wall.png");
+}
+
+div{
+    border-color: #00cccc;
+}
+
+a:focus{
+    outline: none;
+}
+
+.header_bar{
+    position: absolute;
+
+    width: 100%;
+    height: 200px;
+
+    min-width: 974px;
+
+    margin: 0px;
+    top: 0px;
+    padding: 0px;
+
+    background-color: #F5f5f5;
+
+    border-style: solid;
+    border-bottom-width: medium;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
+
+    margin-left: auto;
+    margin-right: auto;
+     
+    left: 0px;
+
+    z-index: 1;
+}
+
+#link_info{
+    font-family: Roboto-Light;
+    font-size: 18px;
+
+    position: absolute;
+
+    right: 50%;
+    margin-right: -487px;
+    margin-top: auto;
+    margin-bottom: auto;
+
+
+}
+
+.middle_section{
+    position: relative;
+    /*
+    background-color: #F4F0EC;
+*/
+    width: 974px;
+    height: 900px;
+
+    top: 190px;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 0px;
+
+    z-index: 0;
+    
+}
+
+.navigation_table:hover td{
+    color: white;
+}
+
+.navigation_bar td{
+    padding: 10px;
+    color: #222222;
+    /*
+    text-shadow: -1px 1px 1px #222222;
+    */
+}
+
+.navigation_table{
+    margin-bottom: 5px;
+}
+
+
+.navigation_bar table tr{
+    height: 55px;
+    width: 100%;
+    background-color: #00cccc;
+
+    text-align: left;
+    white-space: nowrap;
+
+
+    font-family: Roboto-Light;
+    font-size: 20px;
+    
+    
+}
+
+/* the navigation bar will contain all the sections
+ * the website will be divided into. user can click
+ * on each option to be taken to that respective section
+ */
+.navigation_bar{
+    width: 190px;
+    /*
+    background-color: #F4F0EC;
+    */
+    position: absolute;
+    top: 40px;
+    margin: 0px;
+}
+
+/* content section will hold all the actual substance of
+ * the website. for example, all the information for
+ * the education section, skills section etc will appear 
+ * inside a content section
+ */
+.content_section{
+    display: inline-block;
+    position: relative;
+    width: 780px;
+    /*
+    background-color: #F4F0EC;
+*/
+    left: 190px;
+
+    border-style: solid;
+    border-left-width: medium;
+    border-right-width: 0px;
+    border-bottom-width: medium;
+    border-top-width: 0px;
+
+    margin-bottom: 0px;
+    margin-top: -5px;
+
+    overflow: hidden;
+
+}
+
+#profile_section{
+    height:500px;
+}
+
+.content_container{
+    position: relative;
+
+
+    left: 40px;
+    top: 40px;
+
+    max-width: 720px;
+}
+
+#profile_pic img{
+    width: 280px;
+    height: auto;
+
+    float: left;
+    border-style: solid;
+    border-color: #00cccc;
+    border-width: medium;
+
+    margin-right: 10px;
+}
+
+#profile_pic p{
+    text-align: justify;
+    font-family: Roboto-Light;
+    font-size: 18px;
+    color: #222222;
+}
+
+#profile_pic span,a{
+    font-family: Roboto-Regular;
+}
+
+a{
+    text-decoration: none;
+}
+
+.content_header{
+    color: #00cccc;
+    font-family: Roboto-Thin;
+    overflow: hidden; 
+    margin-top: 0px;
+
+}
+
+#viterbi_logo, #ghchs_logo{
+
+    width: 280px;
+    height: auto;
+
+    border-style: solid;
+    border-width: medium;
+    border-color: #00cccc;
+
+    float: left;
+}
+
+#education_section{
+    height: 960px;
+}
+
+#education_table{
+    position: relative;
+    border-spacing: 20px 20px;
+    top: -20px;
+    
+}
+
+#education_table span{
+    font-family: Roboto-Regular;
+
+}
+
+#education_table td{
+    font-family: Roboto-Light;
+    font-size: 18px;
+}
+
+#education_table ul{
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+
+
+
+

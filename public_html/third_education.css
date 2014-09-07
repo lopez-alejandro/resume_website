@@ -1,0 +1,160 @@
+#header_education{
+    color: #FF6961;
+}
+
+#usc_photo_container{
+    position: relative;
+
+    width: 974px;
+    height: 625px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    text-align: center;
+    padding: 0px;
+    overflow: hidden;
+
+    top: 65px;
+    
+}
+
+#usc_header{
+    font-family: Roboto-Thin;
+    font-size: 40px;
+    letter-spacing: 5px;
+    color:  #222222;
+
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+#usc_seal{
+    position: relative;
+    width: 400px;
+    height: 400px;
+
+    text-align: center;
+
+    margin-top: 20px;
+    margin-bottom: 0px;
+
+}
+    
+#usc_intro{
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #222222;
+}
+
+#usc_info_background{
+    position: absolute;
+
+    background-color: #ededed;
+
+    width: 100%;
+    height: 1150px;
+    top: 700px;
+    left: 0px;
+    padding: 0px;
+}
+
+#usc_info_container{
+    position: relative;
+
+    width: 974px;
+    height: 500px;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+
+    padding: 0px;
+}
+
+#usc_info_header{
+    font-size: 25px;
+    letter-spacing: 2px;
+    color:#222222;
+
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+}
+
+.info_module{
+    width: 290px;
+    overflow: hidden;
+
+    background-color: white;
+
+    position: relative;
+
+    display: inline-block;
+    
+    margin: 7px;
+
+    text-align: center;
+}
+
+.info_module img{
+    width:200px;
+    height: auto;
+    
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.info_module_header{
+    margin-top: 50px;
+    margin-bottom: 0px;
+
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #990000;
+}
+
+.info_module_info{
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-right: 15px;
+    text-align: center;
+
+    color:#222222;
+}
+
+#major_module{
+    height:375px;
+    top: -125px;
+}
+
+#viterbi_module{
+    height: 325px; 
+    top: -175px;
+}
+
+#courses_module{
+    height: 500px;
+}
+
+#gpa_module{
+    height: 350px;
+    top: -150px;
+}
+
+#graduate_module{
+    height: 350px;
+    top: -25px;
+}
+
+#deans_module{
+    height: 375px;
+    top: -175px;
+}
+
+
+
+

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Alejandro Lopez Resume</title>
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "standard.css"> 
+    </head>
+
+    <body>
+    <script src="jquery-1.11.1.js"></script>
+        <script>
+           $(document).ready(function () {
+  var top = $('.header_bar').offset().top;
+  $(window).scroll(function (event) {
+    // what the y position of the scroll is
+    var y = $(this).scrollTop();
+
+    // whether that's below the form
+    if (y >= top) {
+      // if so, ad the fixed class
+    $('.navigation_bar').css({
+        position: 'fixed',
+        top: '240px'
+    });
+    } else {
+    $('.navigation_bar').css({
+        position: 'absolute',
+        top: '40px'
+    });
+      // otherwise remove it
+        
+    }
+  });
+
+
+	$('a[href^="#"]').on('click',function (e) {
+	    e.preventDefault();
+
+	    var target = this.hash,
+	    $target = $(target);
+
+	    $('html, body').stop().animate({
+	        'scrollTop': $target.offset().top
+	    }, 700, 'swing', function () {
+	        window.location.hash = target;
+	    });
+	});
+
+
+});
+        </script>
+        <div class = "header_bar">
+            <div id = "link_info">
+                <p>Alejandro Lopez</p>
+                <p>lope058@usc.edu</p>
+                <a href = "https://github.com/Askem-">github.com/Askem-</a>
+            </div>
+        </div>
+        
+        <div class = "middle_section">
+            <div class = "navigation_bar">
+                <a href = "#profile_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>PROFILE</td></tr>
+                </table></a>
+                <a href = "#education_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>EDUCATION</td></tr>
+                </table></a>
+                <a href = "#skills_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>SKILLS</td></tr>
+                </table></a>
+                <a href = "#experience_section"><table class = "navigation_table">
+                    <tr><td colSpan='3'>EXPERIENCE</td></tr>
+                </table></a>
+                <a href = "#resume_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>RESUME</td></tr>
+                </table></a>
+                <a href = "#contact_section"><table class = "navigation_table">
+                    <tr><td colSpan='1'>CONTACT</td></tr>
+                </table></a>
+                
+            </div>
+
+            <div class = "content_section" id = "profile_section">
+                <div class = "content_container"id = "profile_pic">
+                    <h1 class = "content_header">PROFILE</h1>
+                    <img src = "profilePicture.png"/>
+                    <p>&nbsp&nbsp&nbsp&nbspHello, I am a second year student studying <span>Computer Science and Computer Engineering</span> (CSCE) at the <span>USC Viterbi School of Engineering</span>. Currently, I am on the hunt for an engineering intership in Los Angeles or San Francisco.  
+                    &nbsp&nbsp&nbsp&nbspMy passions include <span>Java</span>, <span>soccer</span>, and <span>Super Smash Bros. Melee</span>. You may have seen me at E3 earlier this year where I spent a lot time at the Nintendo booth. I spend my free time learning new programming languages and improving on the ones I already know. I also work on odd projects with my Arduino Uno microcontroller for fun. Feel free to check out my <a href = "https://github.com/Askem-" target = "_blank">Github</a>.<br>&nbsp&nbsp&nbsp&nbspI look forward to hearing from you and contributing to your company.</p>
+
+                </div>
+            </div>
+
+            <div class = "content_section" id = "education_section">
+                <div class = "content_container" id = "education_pic">
+                    <h1 class = "content_header">EDUCATION</h1>
+                    <img id = "viterbi_logo" src = "viterbi_logo.jpg"/> 
+                    <table id = "education_table">
+                        <tr>
+                            <td><span>Major</span></td>
+                            <td>Computer Science Computer Engineer (CECS)</td>
+                        </tr>
+                        <tr>
+                            <td><span>GPA</span></td>
+                            <td>3.35</td>
+                        </tr>
+                        <tr>
+                            <td><span>Year</span></td> 
+                            <td>Second year (Undergraduate)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Graduation</span></td>
+                            <td>May, 2017</td>
+                        </tr>
+                        <tr>
+                            <td><span>Awards</span></td>
+                            <td>Dean's List Fall 2013</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>Alpha Lambda Delta Honors Society</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Relevant Courses</span></td>
+                            <td>CSCI 103 - Introduction to computing</td>
+                            
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>CSCI 104 - Data Structures and Object Oriented Design</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>CSCI 170 - Discrete Methods in Computer Science</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>EE 109 - Introduction to Embedded Systems</td>
+                        </tr>
+                    </table>
+                    <img id = "ghchs_logo" src = "ghchs_logo.jpg"/>
+                    <table id = "education_table">
+                        <tr>
+                            <td><span>Graduation</span></td>
+                            <td>May, 2013</td>
+                        </tr>
+                        <tr>
+                            <td><span>GPA</span></td>
+                            <td>4.26</td>
+                        </tr>
+                        <tr>
+                            <td><span>Academy</span></td>
+                            <td>Science Technology Engineering and Mathematics (STEM)</td>
+                        </tr>
+                        <tr>
+                            <td><span>Awards</span></td>
+                            <td>Valedictorian</td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>High Honor Roll (2009 -2013)</td>
+                        </tr>
+                    </table>
+                        
+                </div>
+            </div>
+
+            <div class = "content_section" id = "skills_section">
+                <div class = "content_container"id = "skills_pic">
+                    <h1 class = "content_header">SKILLS</h1>
+                    <p> 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+                </div>
+            </div>
+            <div class = "content_section" id = "experience_section">
+                <div class = "content_container"id = "experience_pic">
+                    <h1 class = "content_header">EXPERIENCE</h1>
+    <p> 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+
+                </div>
+            </div>
+            <div class = "content_section" id = "resume_section">
+                <div id = "resume_pic"class = "content_container">
+                    <h1 class = "content_header">RESUME</h1>
+<p> 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+
+                </div>
+            </div>
+            <div class = "content_section" id = "contact_section">
+                <div id = "contact_pic"class = "content_container">
+                    <h1 class = "content_header">CONTACT</h1>
+<p> 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </body>
+
+
+</html>

@@ -1,0 +1,263 @@
+/* Roboto font face */
+@font-face{
+    font-family: Roboto-Regular;
+    src: url("Roboto_v1.2/Roboto/Roboto-Regular.ttf");
+}
+
+/* Roboto Bold font face */
+@font-face{
+    font-family: Roboto-Bold;
+    src: url("Roboto_v1.2/Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+}
+
+@font-face{
+    font-family: Roboto-Thin;
+    src: url("Roboto_v1.2/Roboto/Roboto-Thin.ttf");
+}
+
+@font-face{
+    font-family: Roboto-Light;
+    src: url("Roboto_v1.2/Roboto/Roboto-Light.ttf");
+}
+
+::selection {color:white;background:#FF6961;}
+::-moz-selection {color:white;background:#FF6961;}
+
+html{
+    font-family: Roboto-Light;
+}
+
+.header_bar{
+    position: fixed;
+
+
+    background: rgba(255,255,255,0.85);
+    width: 100%;
+    height: 65px;
+
+    /*
+     * set up the header bar's borders
+     */
+    border-style: solid;
+    /* pastel color red */
+    border-top-color: #FF6961;
+    /* pastel color grey */
+    border-bottom-color: #CFCFC4;
+    border-top-width: thick;
+    border-bottom-width: thin;
+    border-left-width: 0px;
+    border-right-width: 0px;
+
+    /* prevent scroll bars from appearing
+     */
+    left: 0px;  
+    top: 0px;
+    margin: 0px;
+    padding: 0px;
+
+    z-index: 5;
+}
+
+.header_container{
+    position: relative;
+    
+    width: 974px;
+    height: 65px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    padding: 0px;
+    top: 0px;
+ 
+}
+
+#header_table{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: -2px;
+    height: 70px;
+
+
+    left: 0px;
+}
+
+#header_table td{
+    border-style: solid;
+    border-color: #CFCFC4;
+    border-right-width: thin;
+    border-left-width: 0px;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+    
+
+}
+
+#header_table:hover, #header_table_contact:hover, .contact_list_item:hover{
+    cursor: pointer;
+}
+
+.header_module:hover, .contact_list_item:hover{
+    color: #aaaaaa;
+}
+
+#header_logo:hover img{
+    opacity: 1.0;
+}
+
+#header_logo{
+    background-color: #FF6961;
+    text-align: center;
+    border-left-width: 0px;
+    border-right-width: 0px;
+}
+
+.header_module{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+
+    color: #222222;
+}
+
+#header_logo img{
+    width: 50px;
+    height: 50px;
+    margin:0px;
+    padding: 0px;
+    opacity: 0.75;
+}
+
+#header_table_contact{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+    top: -2px;
+    height: 70px;
+
+
+    
+    right: 0px;
+}
+
+#header_table_contact td{
+     border-style: solid;
+    border-color: #CFCFC4;
+    border-right-width: thin;
+    border-left-width: thin;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+    
+
+}
+
+#down_arrow{
+    width: 20px;
+    height: auto;
+
+    position: relative;
+
+    top: 3px;
+    margin-left: 5px;
+    opacity: 0.75;
+}
+
+.contact_list{
+    position: absolute;
+    margin: 0px;
+    padding: 0px;
+
+    list-style-type: none; 
+    border-style: solid;
+    border-color: #CFCFC4;
+    border-right-width: thin;
+    border-left-width: thin;
+    border-bottom-width: 0px;
+    border-top-width: 0px;
+
+
+    right: 0px;
+}
+
+.contact_list_item{
+    height: 65px;
+    
+    padding-right: 20px;
+    padding-left: 20px;
+
+    text-align: center;
+
+    line-height: 65px;
+
+    color: #222222;
+
+    margin: 0px;
+}
+
+.contact_list_dropdown{
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+
+    list-style-type: none; 
+    
+
+    right: 0px;
+
+    display: none;
+
+}
+
+.contact_list_dropdown_item{
+    margin: 0px;
+    text-align: left;
+    line-height: 55px;
+    height: 55px;
+    width: 200px;
+
+    padding-right: 20px;
+    padding-left: 20px;
+
+    background-color: #d7d7d7;
+    border-style: solid;
+    border-color: white;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: thin;
+    border-top-width: 0;
+
+    color: #222222;
+
+}
+
+.contact_list_item:hover .contact_list_dropdown{
+    display: block;
+}
+
+.contact_list_item:hover{
+    background-color: #d7d7d7;
+    color: #FF6961;
+}
+
+.contact_list_dropdown_item:hover{
+    background-color: #FF6961;
+    color: white;
+}
+
+.dropdown_img{
+    height: 20px;
+    width: auto;
+    position: relative;
+
+
+    vertical-align: middle;
+
+    margin-right: 20px;
+    margin-left: 20px;
+}

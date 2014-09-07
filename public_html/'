@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Alejandro Lopez Resume</title>
+        <link type = "text/css" rel = "stylesheet" media = "all" href = "third.css">  
+    </head>
+    <body>
+        <script src="jquery-1.11.1.js"></script> 
+
+        <div class = "header_bar">
+            <div class = "header_container">
+                <table id = "header_table">
+                    <tr>
+                        <td class = "header_module" id = "header_logo"><a href = "revision3.html"><img src = "triangle.png"/></a></td>
+                        <td class = "header_module" id = "header_education">Education</td>
+                        <td class = "header_module" id = "header_skills">Skills</td>
+                        <td class = "header_module" id = "header_experience">Experience</td>
+                        <td class = "header_module" id = "header_resume">Resume</td>
+                    </tr>
+                </table>
+                <table id = "header_table_contact">
+                    <tr>
+                        <td class = "header_module" id = "header_contact">Alejandro Lopez</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div id = "e3Selfie_background">
+            <div id = "e3Selfie_container">
+            <img id = "e3Selfie" src = "e3Selfie.JPG"/>
+            </div>
+        </div>
+
+        <div id = "profile_container">
+            <p id = "name_header">ALEJANDRO LOPEZ</p>
+            <p id = "profile_paragraph"><Hello, I am a second year student studying <span>Computer Science and Computer Engineering</span> (CSCE) at the <span>USC Viterbi School of Engineering</span>. Currently, I am on the hunt for an engineering intership in Los Angeles or San Francisco.  
+            &nbsp&nbsp&nbsp&nbspMy passions include <span>Java</span>, <span>soccer</span>, and <span>Super Smash Bros. Melee</span>. You may have seen me at E3 earlier this year where I spent a lot time at the Nintendo booth. I spend my free time learning new programming languages and improving on the ones I already know. I also work on odd projects with my Arduino Uno microcontroller for fun. Feel free to check out my <a href = "https://github.com/Askem-" target = "_blank">Github</a>.<br>&nbsp&nbsp&nbsp&nbspI look forward to hearing from you and contributing to your company.</p>
+        </div>
+    </body>
+</html>
